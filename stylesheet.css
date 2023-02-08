@@ -6,6 +6,7 @@
 .container{
     display: flex;
     background-color: rgb(248, 251, 251);
+    position: relative;
 }
 
 .words{
@@ -22,13 +23,22 @@
 .bottom-half{
     margin-left: 20px;
 }
+span{
+    border-radius: 5px;
+    border: 1px solid rgb(111, 200, 238);
+    font-weight: 600;
+    background-color: rgb(99, 167, 194);
+}
 
+img{
+    border-radius: 60px;
+}
 .picture{
     margin-left: 60px;
     margin-top: 80px;
     opacity: 15;
     transition: 230ms ease-in-out;
-    animation: myAnimation 8s;
+    animation: myAnimation 6s;
     animation-iteration-count: infinite;
 }
 
@@ -37,10 +47,10 @@
         transform: rotateY(0deg);
     }
     25%{
-        transform: rotateY(-90deg);
+        transform: rotateX(-90deg);
     }
     50%{
-        transform: rotate(45deg);
+        transform: rotate(60deg);
     }
     to{
         transform: rotate(360deg);
