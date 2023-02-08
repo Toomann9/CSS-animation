@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    background-color: rgb(248, 251, 251);
+}
+
+.words{
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.top-half{
+    margin-top: 40px;
+    margin-bottom: 16px;
+    margin-left: 20px;
+}
+
+.bottom-half{
+    margin-left: 20px;
+}
+
+.picture{
+    margin-left: 60px;
+}
