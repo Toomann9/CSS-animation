@@ -25,4 +25,25 @@
 
 .picture{
     margin-left: 60px;
+    margin-top: 80px;
+    opacity: 15;
+    transition: 230ms ease-in-out;
+    animation: myAnimation 8s;
+    animation-iteration-count: infinite;
 }
+
+@keyframes myAnimation{
+    from{
+        transform: rotateY(0deg);
+    }
+    25%{
+        transform: rotateY(-90deg);
+    }
+    50%{
+        transform: rotate(45deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+  
