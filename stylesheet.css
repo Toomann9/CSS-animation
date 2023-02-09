@@ -5,46 +5,79 @@
 
 .container{
     display: flex;
-    background-color: rgb(248, 251, 251);
+    margin-top: 3px;
+    background-color: rgb(4, 4, 4);
     position: relative;
+    border-radius: 3px;
+    width: 100%;
+    height: 90vh;
+}
+
+.wrapper-one{
+    background-color: rgb(124, 166, 234);
+    padding: 1px;
 }
 
 .words{
+    margin-top: 200px;
     font-family: sans-serif;
-    font-size: 16px;
+    font-size: 18px;
+    animation: myLetters 5s;
 }
 
 .top-half{
-    margin-top: 40px;
+    margin-top: 260px;
     margin-bottom: 16px;
     margin-left: 20px;
+    color: aliceblue;
 }
 
 .bottom-half{
     margin-left: 20px;
+    color: aliceblue;
 }
 span{
     border-radius: 5px;
-    border: 1px solid rgb(111, 200, 238);
+    border: 1px solid rgb(11, 174, 228);
     font-weight: 600;
-    background-color: rgb(99, 167, 194);
+    background-color: rgb(255, 255, 255);
+    padding: 2px;
+    color: black;
+    margin-bottom: 2px;
+    animation: mySpancolor 5s;
+    animation-iteration-count: infinite;
+}
+
+h3{
+    color: rgb(10, 12, 13);
+    margin-top: 7px;
+    margin-bottom: 4px;
+    margin-left: 20px;
+    font-weight: 700;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    animation: myHeavyletters 10s;
+    animation-iteration-count: infinite;
 }
 
 img{
     border-radius: 60px;
+    margin-left: 460px;
 }
 .picture{
     margin-left: 60px;
-    margin-top: 80px;
-    opacity: 15;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    opacity: 15px;
     transition: 230ms ease-in-out;
     animation: myAnimation 6s;
-    animation-iteration-count: infinite;
+    
 }
 
 @keyframes myAnimation{
     from{
         transform: rotateY(0deg);
+        transform: translateY(500px);
     }
     25%{
         transform: rotateX(-90deg);
@@ -54,6 +87,39 @@ img{
     }
     to{
         transform: rotate(360deg);
+        transform: translateY(0px);
     }
 }
   
+@keyframes myLetters{
+    0%{
+        transform: translateX(600px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes mySpancolor{
+        0% { background-color: rgb(255, 255, 255); }
+        25%{ background-color: rgb(229, 78, 18); }
+        50% { background-color: rgb(7, 173, 35); }
+        75%{ background-color: rgb(25, 125, 143); }
+        100% { background-color: rgb(229, 229, 222); }
+}
+@keyframes myHeavyletters{
+    0%{
+        transform: translateX(100%);
+        color: rgb(18, 18, 18);
+    }
+    25%{
+        color: rgb(255, 255, 255);
+    }
+    50%{
+        color: rgb(9, 9, 9);
+    }
+    100%{
+        transform: translateX(-10%);
+        color: rgb(255, 255, 255);
+    }
+}
